@@ -1,0 +1,31 @@
+def main():
+    # Manually created employee salary data stored in a list
+    salaries = [45000, 52000, 38000, 60000, 41000, 75000, 32000]
+
+    print("Original Salary Data:", salaries)
+    print("-" * 35)
+
+    # Using built-in Python functions for basic calculations
+    total_salary = sum(salaries)
+    highest_salary = max(salaries)
+    lowest_salary = min(salaries)
+    number_of_employees = len(salaries)
+
+    # Calculating average salary
+    # (Checking if list is not empty to avoid division by zero error)
+    if number_of_employees > 0:
+        average_salary = total_salary / number_of_employees
+    else:
+        average_salary = 0
+
+    # Salary statistics and results
+    print("=== Salary Analysis Results ===")
+    print(f"Total Employees: {number_of_employees}")
+    print(f"Total Salary Payout: ₹{total_salary}")
+    print(f"Average Salary: ₹{average_salary:.2f}")
+    print(f"Highest Salary: ₹{highest_salary}")
+    print(f"Lowest Salary: ₹{lowest_salary}")
+    print("-" * 35)
+
+if __name__ == "__main__":
+    main()
